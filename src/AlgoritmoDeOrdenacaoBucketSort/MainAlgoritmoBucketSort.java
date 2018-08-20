@@ -29,7 +29,7 @@ public class MainAlgoritmoBucketSort {
 		}
 		
 		//Criando variavel para utilizar a funcao do agoritmo de ordenacao
-		InsertionSort algoritmo = new InsertionSort();
+		BucketSort algoritmo = new BucketSort();
 		
 		//variavel que armazena o numero de interacoes do algoritmo SelectionSort
 		int c = algoritmo.recebeVetor(vetorCrescente);

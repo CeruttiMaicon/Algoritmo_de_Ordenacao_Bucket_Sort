@@ -1,31 +1,42 @@
 package AlgoritmoDeOrdenacaoBucketSort;
 
 public class BucketSort {
-	
-	public int recebeVetor (int[] vetor){
-		
-		int tamVetor = vetor.length;
+
+	public static int recebeVetor(int[] vetor) {
+		int maxVal = 0;
 		int contador = 0;
-		int pivo;
 		
-		
-		for (int i = 1; i < tamVetor; i++){
-			//Estabelecendo o pivo do algoritmo
-			pivo = vetor[i];
+		for(int i = 0; i < vetor.length; i++ ){
 			contador++;
-			for(int j = i - 1; j >= 0; j--) {
+			if (vetor[i] > maxVal){
+				maxVal = vetor[i] ;
 				contador++;
-				if (vetor[j] > pivo ) {
-					
-					vetor[j+1] = vetor[j];
-					vetor[j] = pivo;
-					contador++;
-				}else{
-					break;
-				}
-				
 			}
-		}	
+		}
+		
+		int[] bucket = new int[maxVal + 1];
+
+		for (int i = 0; i < bucket.length; i++) {
+			bucket[i] = 0;
+			contador++;
+		}
+
+		for (int i = 0; i < vetor.length; i++) {
+			bucket[vetor[i]]++;
+			contador++;
+		}
+
+		int outPos = 0;
+		for (int i = 0; i < bucket.length; i++) {
+			contador++;
+			for (int j = 0; j < bucket[i]; j++) {
+				vetor[outPos++] = i;
+				contador++;
+			}
+		}
+		
 		return contador;
 	}
+
+
 }
