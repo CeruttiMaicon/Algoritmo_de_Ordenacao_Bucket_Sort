@@ -6,6 +6,7 @@ public class BucketSort {
 		int maxVal = 0;
 		int contador = 0;
 		
+		//Busca o maior valor dentro do vetor
 		for(int i = 0; i < vetor.length; i++ ){
 			contador++;
 			if (vetor[i] > maxVal){
@@ -14,12 +15,8 @@ public class BucketSort {
 			}
 		}
 		
+		//cria um vetor auxiliar
 		int[] bucket = new int[maxVal + 1];
-
-		for (int i = 0; i < bucket.length; i++) {
-			bucket[i] = 0;
-			contador++;
-		}
 
 		for (int i = 0; i < vetor.length; i++) {
 			bucket[vetor[i]]++;
