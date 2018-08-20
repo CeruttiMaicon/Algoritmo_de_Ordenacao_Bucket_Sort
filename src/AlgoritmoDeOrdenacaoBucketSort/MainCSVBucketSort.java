@@ -15,7 +15,7 @@ public class MainCSVBucketSort {
             FileWriter writer = new FileWriter(
                     "c:/Users/1144001268/Desktop/arrayInsertionSortAndBubbleSort2AndBubbleSortAndSelectionSortAndBucketSort.csv");
 
-            // Faz o cabeçalho do arquivo CSV
+            // Faz o cabecalho do arquivo CSV
             writer.append("InsertionSort-Cresc,");
             writer.append("InsertionSort-Decresc,");
             writer.append("InsertionSort-Aleatorio,");
@@ -33,7 +33,7 @@ public class MainCSVBucketSort {
             writer.append("BucketSort-Aleatorio,");
 
             writer.append('\n');
-            for (int n = 1; n <= 100; n++) {
+            for (int n = 1; n <= 1000; n++) {
                 int[] crescenteVar      = new int[n];
                 int[] decrescenteVar    = new int[n];
                 int[] aleatorioVar      = new int[n];
@@ -59,9 +59,9 @@ public class MainCSVBucketSort {
                 SelectionSort selection2    = new SelectionSort();
                 SelectionSort selection3    = new SelectionSort();
                 
-                BucketSort bucket1    = new BucketSort();
-                BucketSort bucket2    = new BucketSort();
-                BucketSort bucket3    = new BucketSort();
+                BucketSort bucket1    		= new BucketSort();
+                BucketSort bucket2    		= new BucketSort();
+                BucketSort bucket3    		= new BucketSort();
 
                 // Escreve no arquivo CSV
                 writer.append(insertion1.recebeVetor  (crescenteVar) + ",");
@@ -76,14 +76,14 @@ public class MainCSVBucketSort {
                 writer.append(selection1.recebeVetor  (crescenteVar) + ",");
                 writer.append(selection2.recebeVetor  (decrescenteVar) + ",");
                 writer.append(selection3.recebeVetor  (aleatorioVar) + ",");
-                writer.append(bucket1.recebeVetor  (crescenteVar) + ",");
-                writer.append(bucket2.recebeVetor  (decrescenteVar) + ",");
-                writer.append(bucket3.recebeVetor  (aleatorioVar) + ",");
+                writer.append(bucket1.recebeVetor  	  (crescenteVar) + ",");
+                writer.append(bucket2.recebeVetor     (decrescenteVar) + ",");
+                writer.append(bucket3.recebeVetor     (aleatorioVar) + ",");
                 writer.append('\n');
 
                 // Criando CSV com o array
                 // 99 para pegar o array cheio
-                if (n == 100) {
+                if (n == 1000) {
 
                     writer.flush();
                     writer.close();
