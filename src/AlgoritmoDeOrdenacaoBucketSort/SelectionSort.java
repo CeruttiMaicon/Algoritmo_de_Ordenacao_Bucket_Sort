@@ -12,10 +12,8 @@ public class SelectionSort {
 			for ( j = i + 1; j < tamVetor; j++) {
 				contador++;
 				if ( vetor[j] < vetor[min] ) {
-					
 					min = j;
 				}			
-
 			}
 			contador++;
 			if ( vetor[i] != vetor[min] ){
@@ -25,10 +23,6 @@ public class SelectionSort {
 				vetor[min] = aux;
 			}
 		}
-		
 		return contador;
-	}
-	
-	
-		
+	}	
 }

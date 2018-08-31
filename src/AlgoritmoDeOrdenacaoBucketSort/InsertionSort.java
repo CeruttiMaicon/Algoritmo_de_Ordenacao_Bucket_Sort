@@ -8,7 +8,6 @@ public class InsertionSort {
 		int contador = 0;
 		int pivo;
 		
-		
 		for (int i = 1; i < tamVetor; i++){
 			//Estabelecendo o pivo do algoritmo
 			pivo = vetor[i];
@@ -23,7 +22,6 @@ public class InsertionSort {
 				}else{
 					break;
 				}
-				
 			}
 		}	
 		return contador;

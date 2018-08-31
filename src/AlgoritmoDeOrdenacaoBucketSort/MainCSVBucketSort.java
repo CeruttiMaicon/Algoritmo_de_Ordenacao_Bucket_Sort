@@ -13,7 +13,8 @@ public class MainCSVBucketSort {
             // Aqui definimos o local de criacao do arquivo CSV, no meu Ubuntu coloquei esta
             // rota
             FileWriter writer = new FileWriter(
-                    "c:/Users/1144001268/Desktop/arrayInsertionSortAndBubbleSort2AndBubbleSortAndSelectionSortAndBucketSort.csv");
+                    // "c:/Users/1144001268/Desktop/arrayInsertionSortAndBubbleSort2AndBubbleSortAndSelectionSortAndBucketSort.csv");
+                    "//home/dev3/Área de Trabalho/array.csv");
 
             // Faz o cabecalho do arquivo CSV
             writer.append("InsertionSort-Cresc,");
@@ -64,21 +65,21 @@ public class MainCSVBucketSort {
                 BucketSort bucket3    		= new BucketSort();
 
                 // Escreve no arquivo CSV
-                writer.append(insertion1.recebeVetor  (crescenteVar) + ",");
+                writer.append(insertion1.recebeVetor  (crescenteVar)   + ",");
                 writer.append(insertion2.recebeVetor  (decrescenteVar) + ",");
-                writer.append(insertion3.recebeVetor  (aleatorioVar) + ",");
-                writer.append(bubblesort21.recebeVetor(crescenteVar) + ",");
+                writer.append(insertion3.recebeVetor  (aleatorioVar)   + ",");
+                writer.append(bubblesort21.recebeVetor(crescenteVar)   + ",");
                 writer.append(bubblesort22.recebeVetor(decrescenteVar) + ",");
-                writer.append(bubblesort23.recebeVetor(aleatorioVar) + ",");
-                writer.append(bubblesort1.recebeVetor (crescenteVar) + ",");
+                writer.append(bubblesort23.recebeVetor(aleatorioVar)   + ",");
+                writer.append(bubblesort1.recebeVetor (crescenteVar)   + ",");
                 writer.append(bubblesort2.recebeVetor (decrescenteVar) + ",");
-                writer.append(bubblesort3.recebeVetor (aleatorioVar) + ",");
-                writer.append(selection1.recebeVetor  (crescenteVar) + ",");
+                writer.append(bubblesort3.recebeVetor (aleatorioVar)   + ",");
+                writer.append(selection1.recebeVetor  (crescenteVar)   + ",");
                 writer.append(selection2.recebeVetor  (decrescenteVar) + ",");
-                writer.append(selection3.recebeVetor  (aleatorioVar) + ",");
-                writer.append(bucket1.recebeVetor  	  (crescenteVar) + ",");
+                writer.append(selection3.recebeVetor  (aleatorioVar)   + ",");
+                writer.append(bucket1.recebeVetor  	  (crescenteVar)   + ",");
                 writer.append(bucket2.recebeVetor     (decrescenteVar) + ",");
-                writer.append(bucket3.recebeVetor     (aleatorioVar) + ",");
+                writer.append(bucket3.recebeVetor     (aleatorioVar)   + ",");
                 writer.append('\n');
 
                 // Criando CSV com o array

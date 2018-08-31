@@ -13,7 +13,6 @@ public class MainAlgoritmoBucketSort {
 
 		// Popula o vetor de com uma ordem aleatoria
 		p.crescente(vetorCrescente);
-
 		
 		for (int i = 0; i <	 vetorCrescente.length; i++ ){
 			if (i == 0){
@@ -56,7 +55,6 @@ public class MainAlgoritmoBucketSort {
 		// Popula o vetor de com uma ordem aleatoria
 		p.decrescente(vetorDecrescente);
 		
-		
 		for (int i = 0; i < vetorDecrescente.length; i++ ){
 			if (i == 0){
 				System.out.println("\n");
@@ -88,7 +86,7 @@ public class MainAlgoritmoBucketSort {
 			}
 		}
 		
-////////////////////////////////////////////////Vetor com valor DECRESCENTE ///////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////Vetor com valor ALEATORIO ///////////////////////////////////////////////////////////////////////
 		
 		// Cria um vetor com X pisicoes
 		int[] vetorAleatorio = new int[numPosVetor];
@@ -123,7 +121,5 @@ public class MainAlgoritmoBucketSort {
 				System.out.println(e);
 			}
 		}
-
 	}
-
 }

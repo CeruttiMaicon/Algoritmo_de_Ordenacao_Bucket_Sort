@@ -20,8 +20,7 @@ public class Popula {
 	}
 	
 	public int[] aleatorio (int[] valor)  {
-		
-		for (int i = 0; i < valor.length; i++){
+		for (int i = 0; i < valor.length; i++) {
 			Random aleatorio = new Random();
 			valor[i] = aleatorio.nextInt(100);
 		}
